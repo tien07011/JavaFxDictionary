@@ -1,0 +1,30 @@
+.menu{
+    -fx-background-color: #749999;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+.menu-icon{
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+}
+.menu-icon:focused{
+    -fx-background-color: blue;
+}
+.container{
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+}
+.search-box{
+    -fx-background-color: blueviolet;
+    -fx-background-radius: 15;
+}
+.exitSearch{
+    -fx-background-color: bisques;
+}
+.bg_trans{
+    -fx-background-color: white;
+}
+.button_Trans:focused{
+    -fx-background-color: white;
+}

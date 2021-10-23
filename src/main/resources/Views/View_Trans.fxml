@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="715.0" styleClass="bg_trans" stylesheets="@../Utils/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DictionaryApplication.Controllers.ViewTrans">
+   <children>
+      <TextArea fx:id="transEnglish" layoutX="78.0" layoutY="225.0" prefHeight="149.0" prefWidth="200.0" promptText="Nhập từ cần dịch">
+         <font>
+            <Font size="13.0" />
+         </font></TextArea>
+      <Label layoutX="138.0" layoutY="184.0" text="Tiếng Anh">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextArea fx:id="transVn" layoutX="442.0" layoutY="225.0" prefHeight="149.0" prefWidth="200.0" promptText="Nghĩa của từ">
+         <font>
+            <Font size="13.0" />
+         </font></TextArea>
+      <Label layoutX="502.0" layoutY="184.0" text="Tiếng Việt">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button fx:id="buttonTrans" layoutX="323.0" layoutY="294.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="70.0" styleClass="button_Trans" stylesheets="@../Utils/style.css" text="Dịch">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="79.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Utils/Images/ngon-ngu-anh-la-nganh-gi-hoc-nhung-gi-co-hoi-vie-1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="124.0" fitWidth="200.0" layoutX="452.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Utils/Images/ngon-ngu-viet.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="110.0" layoutX="308.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Utils/Images/tải%20xuống.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="speak_English" contentDisplay="GRAPHIC_ONLY" layoutX="155.0" layoutY="381.0" mnemonicParsing="false" text="Button">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Utils/Images/sound2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="speak_Vn" contentDisplay="GRAPHIC_ONLY" layoutX="519.0" layoutY="381.0" mnemonicParsing="false" text="Button">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Utils/Images/sound2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

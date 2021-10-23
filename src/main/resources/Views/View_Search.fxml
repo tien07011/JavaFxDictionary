@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="485.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DictionaryApplication.Controllers.ViewSearch">
+   <children>
+      <Pane layoutX="1.0" layoutY="6.0" prefHeight="120.0" prefWidth="715.0">
+         <children>
+            <TextField fx:id="search_english" layoutX="50.0" layoutY="69.0" promptText="Nhập từ..." />
+            <Label fx:id="khongcotuhienthi" layoutX="60.0" layoutY="94.0" prefHeight="25.0" prefWidth="129.0" text="không có từ hiển thị">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="33.0" text="Tìm kiếm">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="113.0" fitWidth="302.0" layoutX="324.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Utils/Images/bg_search.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane layoutY="120.0" prefHeight="365.0" prefWidth="715.0">
+         <children>
+            <AnchorPane prefHeight="365.0" prefWidth="246.0">
+               <children>
+                  <Label layoutX="56.0" layoutY="14.0" text="Kết quả tìm kiếm" textFill="#a82121">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <ListView fx:id="listviewsearch" layoutX="11.0" layoutY="50.0" prefHeight="308.0" prefWidth="225.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="246.0" prefHeight="365.0" prefWidth="471.0">
+               <children>
+                  <Label fx:id="tutienganh" layoutX="22.0" layoutY="52.0" prefHeight="42.0" prefWidth="200.0" text="Từ tiếng anh">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="sound" contentDisplay="GRAPHIC_ONLY" layoutX="321.0" layoutY="48.0" mnemonicParsing="false" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Utils/Images/sound2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="save" contentDisplay="GRAPHIC_ONLY" layoutX="249.0" layoutY="48.0" mnemonicParsing="false" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Utils/Images/save.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="delete" contentDisplay="GRAPHIC_ONLY" layoutX="396.0" layoutY="48.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="43.0" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Utils/Images/delete.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <TextArea fx:id="nghiacuatu" layoutX="7.0" layoutY="109.0" prefHeight="246.0" prefWidth="454.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
